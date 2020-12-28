@@ -1,0 +1,51 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    position: relative;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
+
+    &::after {
+      content: "";
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-dark-gray;
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  //IMPORTANT , Below is what makes above hover works
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10rem;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.3s ease-out 0.75s;
+    animation-fill-mode: backwards; //IMPORTANT
+  }
+}
