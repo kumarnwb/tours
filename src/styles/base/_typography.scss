@@ -33,5 +33,36 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2rem;
-  text-align: center;
+  transition: all 200ms;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  //Adding background-clip and color. First will make sure that the linear gradiant only covers the textual content
+  //Color: Transparent will make sure that linear gradiant is visible
+  background-clip: text;
+  color: transparent;
+
+  &:hover {
+    transform: skewX(15deg) skewY(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }

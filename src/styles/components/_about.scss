@@ -3,3 +3,36 @@
   margin-top: -20vh;
   padding: 25rem 0;
 }
+
+.composition {
+  position: relative;
+  &__photo {
+    position: absolute;
+    width: 55%;
+    outline-offset: 2rem;
+    transition: all 0.3s;
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+
+    &:hover {
+      z-index: 2;
+      outline: 1.5rem solid $color-primary;
+      box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.2);
+      transform: scale(1.2) translateY(1rem);
+    }
+  }
+  //SCALING DOWN THE IMAGE WHICH IS NOT HOVERED
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.9);
+  }
+}
