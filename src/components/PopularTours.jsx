@@ -25,7 +25,9 @@ const PopularTours = () => (
                                     </ul>
                                 </div>
                             </div>
-
+                            <div className="card__side card__side--back card__side--back--1">
+                                Back
+                            </div>
                         </div>
                     </div>
                 </div>
