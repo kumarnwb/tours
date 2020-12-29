@@ -2,6 +2,7 @@
   background-color: $color-light-gray-1;
   margin-top: -10rem;
   padding: 25rem 0 50rem 0;
+  height: 95rem;
 }
 
 .card {
@@ -35,6 +36,20 @@
           $color-secondary-dark
         );
       }
+      &--2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+      &--3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
     }
   }
 
@@ -58,6 +73,22 @@
           $color-secondary-dark
         ),
         url("../../assets/nat-5.jpg");
+    }
+    &--p2 {
+      background-image: linear-gradient(
+          to right,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url("../../assets/nat-6.jpg");
+    }
+    &--p3 {
+      background-image: linear-gradient(
+          to right,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url("../../assets/nat-7.jpg");
     }
   }
   &__heading {
@@ -83,6 +114,22 @@
         $color-secondary-dark
       );
     }
+    &--2 {
+      padding: 1rem 1.5rem;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-primary-light,
+        $color-primary-dark
+      );
+    }
+    &--3 {
+      padding: 1rem 1.5rem;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-tertiary-light,
+        $color-tertiary-dark
+      );
+    }
   }
 
   &__details {
@@ -101,5 +148,26 @@
         }
       }
     }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: $default-font-size;
+    text-transform: uppercase;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 300;
   }
 }

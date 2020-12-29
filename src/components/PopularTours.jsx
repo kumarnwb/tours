@@ -26,7 +26,13 @@ const PopularTours = () => (
                                 </div>
                             </div>
                             <div className="card__side card__side--back card__side--back--1">
-                                Back
+                                <div className="card__cta">
+                                    <div className="card__price-box">
+                                        <div className="card__price-only">Only</div>
+                                        <div className="card__price-value">$297</div>
+                                    </div>
+                                    <a href="#" className="btn btn--white">Book now </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -35,7 +41,30 @@ const PopularTours = () => (
                     <div>
                         <div className="card">
                             <div className="card__side card__side--front">
-                                Front
+                                <  div className="card__picture card__picture--p2">
+                                    &nbsp;
+                                </div>
+                                <h4 className="card__heading">
+                                    <span className="card__heading-span card__heading-span--2"> The Forest hiker</span>
+                                </h4>
+                                <div className="card__details">
+                                    <ul>
+                                        <li>7 days </li>
+                                        <li>upto 40 people</li>
+                                        <li>6 tours guide</li>
+                                        <li>sleep in provided tents</li>
+                                        <li>Difficulty: medium </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="card__side card__side--back card__side--back--2">
+                                <div className="card__cta">
+                                    <div className="card__price-box">
+                                        <div className="card__price-only">Only</div>
+                                        <div className="card__price-value">$497</div>
+                                    </div>
+                                    <a href="#" className="btn btn--white">Book now </a>
+                                </div>
                             </div>
 
                         </div>
@@ -45,7 +74,30 @@ const PopularTours = () => (
                     <div>
                         <div className="card">
                             <div className="card__side card__side--front">
-                                Front
+                                <  div className="card__picture card__picture--p3">
+                                    &nbsp;
+                                </div>
+                                <h4 className="card__heading">
+                                    <span className="card__heading-span card__heading-span--3"> The snow adventurer</span>
+                                </h4>
+                                <div className="card__details">
+                                    <ul>
+                                        <li> 5 days </li>
+                                        <li>upto 15 people</li>
+                                        <li>3 tours guide</li>
+                                        <li>sleep in provided tents</li>
+                                        <li>Difficulty: hard </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="card__side card__side--back card__side--back--3">
+                                <div className="card__cta">
+                                    <div className="card__price-box">
+                                        <div className="card__price-only">Only</div>
+                                        <div className="card__price-value">$897</div>
+                                    </div>
+                                    <a href="#" className="btn btn--white">Book now </a>
+                                </div>
                             </div>
 
                         </div>
