@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Features from "./components/Features";
 import PopularTours from "./components/PopularTours";
+import Stories from "./components/Stories";
 import "../src/styles/main.scss";
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <About />
         <Features />
         <PopularTours />
+        <Stories />
       </div>
     );
   }
