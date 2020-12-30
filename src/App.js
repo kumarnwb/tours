@@ -4,6 +4,7 @@ import About from "./components/About";
 import Features from "./components/Features";
 import PopularTours from "./components/PopularTours";
 import Stories from "./components/Stories";
+import Booking from "./components/Booking";
 import "../src/styles/main.scss";
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
         <Features />
         <PopularTours />
         <Stories />
+        <Booking />
       </div>
     );
   }
