@@ -1,0 +1,76 @@
+.section-stories {
+  padding: 12rem 0;
+  position: relative;
+}
+
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.2);
+  background-color: rgba($color-white, 0.75);
+  border-radius: 2px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+
+
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%); //IMPORTANT , first number(50%) is radius which is half of width and height second and third number
+    // is inclination with X-axis and Y-axis. For shape-outside to work element 
+    //must be floated and must have a width and height. The "shape-outside" all it does is to define , how the content flows around the element.
+    //in this case the shape is circle
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+  }
+
+  &__image {
+
+    height: 100%;
+    -webkit-transform: translateX(-4rem) scale(1.3);
+    transform: translateX(-4rem) scale(1.3);
+
+    transition: all 0.5s;
+  }
+
+  &__text {
+    transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 20%);
+    font-size: $default-font-size;
+    color: $color-white;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.7s ease;
+    backface-visibility: hidden;
+
+
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  &:hover &__image {
+    -webkit-transform: scale(1);
+
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
+  }
+}
