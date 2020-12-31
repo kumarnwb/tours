@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import PopularTours from "./components/PopularTours";
 import Stories from "./components/Stories";
 import Booking from "./components/Booking";
+import Footer from './components/Footer';
 import "../src/styles/main.scss";
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
         <PopularTours />
         <Stories />
         <Booking />
+        <Footer />
       </div>
     );
   }
