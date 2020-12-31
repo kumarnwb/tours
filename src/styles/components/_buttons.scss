@@ -1,4 +1,6 @@
 .btn {
+
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -9,6 +11,10 @@
     position: relative;
     font-size: 1.2rem;
     transition: all 0.2s;
+
+    //Changing for button
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -25,9 +31,17 @@
   &--white {
     background-color: $color-white;
     color: $color-dark-gray;
+
     &::after {
       background-color: $color-white;
     }
+  }
+
+  &--green {
+
+    background-color: $color-primary;
+    color: $color-white;
+
   }
 
   //IMPORTANT , Below is what makes above hover works
@@ -51,6 +65,7 @@
 }
 
 .btn-text {
+
   &:link,
   &:visited {
     text-decoration: none;
@@ -69,7 +84,10 @@
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 }

@@ -18,6 +18,29 @@ const Booking = () => (
                                 <input type="email" name="email" placeholder="Email address" id="email" className="form__input" required={true} />
                                 <label htmlFor="email" className="form__label">Email address </label>
                             </div>
+                            <div className="from__group u-margin-bottom-medium">
+                                <div className="form__group-radio">
+                                    <input type="radio" id="small" className="form__radio-input" name="size" />
+                                    <label htmlFor="small" className="form__radio-label">
+                                        {/* In CSS radio buttons cannot be styled , so adding a span element just to style it  */}
+                                        <span className="form__radio-button"></span>
+                                        Small tour group
+                                        </label>
+                                </div>
+                                <div className="form__group-radio">
+                                    <input type="radio" name="" id="large" className="form__radio-input" name="size" />
+
+                                    <label htmlFor="large" className="form__radio-label">
+                                        <span className="form__radio-button"></span>
+                                        Large group tour
+                                        </label>
+
+                                </div>
+
+                            </div>
+                            <div className="form__group ">
+                                <button className="btn btn--green">Next step &rarr;</button>
+                            </div>
                         </form>
                     </div>
                 </div>
