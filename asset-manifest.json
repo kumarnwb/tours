@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/tours/static/css/main.7945d0cd.chunk.css",
-    "main.js": "/tours/static/js/main.ea62aa47.chunk.js",
-    "main.js.map": "/tours/static/js/main.ea62aa47.chunk.js.map",
+    "main.css": "/tours/static/css/main.0c52b638.chunk.css",
+    "main.js": "/tours/static/js/main.b530b6c3.chunk.js",
+    "main.js.map": "/tours/static/js/main.b530b6c3.chunk.js.map",
     "runtime-main.js": "/tours/static/js/runtime-main.f68aa9b0.js",
     "runtime-main.js.map": "/tours/static/js/runtime-main.f68aa9b0.js.map",
     "static/js/2.c7f7fc1d.chunk.js": "/tours/static/js/2.c7f7fc1d.chunk.js",
@@ -10,9 +10,10 @@
     "static/js/3.421f88b0.chunk.js": "/tours/static/js/3.421f88b0.chunk.js",
     "static/js/3.421f88b0.chunk.js.map": "/tours/static/js/3.421f88b0.chunk.js.map",
     "index.html": "/tours/index.html",
-    "static/css/main.7945d0cd.chunk.css.map": "/tours/static/css/main.7945d0cd.chunk.css.map",
+    "static/css/main.0c52b638.chunk.css.map": "/tours/static/css/main.0c52b638.chunk.css.map",
     "static/js/2.c7f7fc1d.chunk.js.LICENSE.txt": "/tours/static/js/2.c7f7fc1d.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/tours/static/media/nat-7.167e44e4.jpg",
+    "static/media/logo-green-2x.76177450.png": "/tours/static/media/logo-green-2x.76177450.png",
     "static/media/logo-white.6c89a3f0.png": "/tours/static/media/logo-white.6c89a3f0.png",
     "static/media/nat-1-large.a1c1cbdb.jpg": "/tours/static/media/nat-1-large.a1c1cbdb.jpg",
     "static/media/nat-2-large.cbc0cd9f.jpg": "/tours/static/media/nat-2-large.cbc0cd9f.jpg",
@@ -25,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.f68aa9b0.js",
     "static/js/2.c7f7fc1d.chunk.js",
-    "static/css/main.7945d0cd.chunk.css",
-    "static/js/main.ea62aa47.chunk.js"
+    "static/css/main.0c52b638.chunk.css",
+    "static/js/main.b530b6c3.chunk.js"
   ]
 }
